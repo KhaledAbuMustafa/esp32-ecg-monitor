@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="440" fill="#ffffff"/>
+
+  <!-- Powerbank -->
+  <rect x="30" y="170" width="110" height="70" rx="8" fill="#f2f2f2" stroke="#555" stroke-width="1.5"/>
+  <text x="85" y="200" text-anchor="middle" font-size="14" font-weight="600" fill="#222">Powerbank</text>
+  <text x="85" y="220" text-anchor="middle" font-size="12" fill="#555">5 V über USB</text>
+  <line x1="140" y1="205" x2="190" y2="205" stroke="#555" stroke-width="3"/>
+  <text x="165" y="195" text-anchor="middle" font-size="11" fill="#555">USB</text>
+
+  <!-- ESP32 -->
+  <rect x="190" y="110" width="170" height="210" rx="10" fill="#e8f0fb" stroke="#2a5caa" stroke-width="2"/>
+  <text x="275" y="140" text-anchor="middle" font-size="18" font-weight="700" fill="#1d3f75">ESP32</text>
+  <text x="275" y="160" text-anchor="middle" font-size="12" fill="#1d3f75">WLAN + Webserver</text>
+  <circle cx="360" cy="200" r="5" fill="#2a5caa"/>
+  <text x="350" y="204" text-anchor="end" font-size="13" fill="#222">3V3</text>
+  <circle cx="360" cy="240" r="5" fill="#2a5caa"/>
+  <text x="350" y="244" text-anchor="end" font-size="13" fill="#222">GND</text>
+  <circle cx="360" cy="280" r="5" fill="#2a5caa"/>
+  <text x="350" y="284" text-anchor="end" font-size="13" fill="#222">GPIO35</text>
+
+  <!-- AD8232 -->
+  <rect x="490" y="110" width="170" height="210" rx="10" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+  <text x="575" y="140" text-anchor="middle" font-size="18" font-weight="700" fill="#8e2a20">AD8232</text>
+  <text x="575" y="160" text-anchor="middle" font-size="12" fill="#8e2a20">EKG-Verstärker</text>
+  <circle cx="490" cy="200" r="5" fill="#c0392b"/>
+  <text x="500" y="204" font-size="13" fill="#222">3.3V</text>
+  <circle cx="490" cy="240" r="5" fill="#c0392b"/>
+  <text x="500" y="244" font-size="13" fill="#222">GND</text>
+  <circle cx="490" cy="280" r="5" fill="#c0392b"/>
+  <text x="500" y="284" font-size="13" fill="#222">OUTPUT</text>
+  <text x="650" y="204" text-anchor="end" font-size="11" fill="#888">LO+  frei</text>
+  <text x="650" y="224" text-anchor="end" font-size="11" fill="#888">LO−  frei</text>
+  <text x="650" y="244" text-anchor="end" font-size="11" fill="#888">SDN  frei</text>
+  <!-- Klinkenbuchse -->
+  <rect x="650" y="270" width="26" height="22" rx="3" fill="#333"/>
+  <text x="663" y="310" text-anchor="middle" font-size="10" fill="#555">3,5 mm</text>
+
+  <!-- Verbindungen -->
+  <line x1="365" y1="200" x2="485" y2="200" stroke="#d35400" stroke-width="2.5"/>
+  <line x1="365" y1="240" x2="485" y2="240" stroke="#222" stroke-width="2.5"/>
+  <line x1="365" y1="280" x2="485" y2="280" stroke="#27ae60" stroke-width="2.5"/>
+  <text x="425" y="193" text-anchor="middle" font-size="11" fill="#d35400">3,3 V</text>
+  <text x="425" y="233" text-anchor="middle" font-size="11" fill="#222">GND</text>
+  <text x="425" y="273" text-anchor="middle" font-size="11" fill="#27ae60">Signal</text>
+
+  <!-- Elektrodenkabel -->
+  <path d="M676 281 C 720 281, 720 220, 760 220" fill="none" stroke="#555" stroke-width="2"/>
+
+  <!-- Oberkörper -->
+  <path d="M800 120 q 20 -30 50 -30 q 30 0 50 30 l 10 40 l 0 180 l -120 0 l 0 -180 z" fill="#faf5ef" stroke="#999" stroke-width="1.5"/>
+  <circle cx="850" cy="70" r="24" fill="#faf5ef" stroke="#999" stroke-width="1.5"/>
+  <!-- Elektroden (Blick von vorne: rechte Körperseite links im Bild) -->
+  <circle cx="815" cy="140" r="9" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+  <circle cx="885" cy="140" r="9" fill="#f1c40f" stroke="#fff" stroke-width="2"/>
+  <circle cx="820" cy="290" r="9" fill="#2ecc71" stroke="#fff" stroke-width="2"/>
+  <path d="M760 220 L 815 149 M760 220 L 885 149 M760 220 L 820 281" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Legende Elektroden -->
+  <circle cx="400" cy="375" r="7" fill="#e74c3c"/>
+  <text x="412" y="379" font-size="12" fill="#222">Rot (R) = RA: unter dem rechten Schlüsselbein</text>
+  <circle cx="400" cy="398" r="7" fill="#f1c40f"/>
+  <text x="412" y="402" font-size="12" fill="#222">Gelb (L) = LA: unter dem linken Schlüsselbein</text>
+  <circle cx="400" cy="421" r="7" fill="#2ecc71"/>
+  <text x="412" y="425" font-size="12" fill="#222">Grün (R) = RL: rechter Unterbauch (Referenz)</text>
+
+  <text x="30" y="40" font-size="20" font-weight="700" fill="#222">Schaltplan ESP32 EKG-Monitor</text>
+  <text x="30" y="62" font-size="13" fill="#666">Rechte Körperseite erscheint in der Ansicht von vorne links.</text>
+  <text x="30" y="400" font-size="12" fill="#c0392b" font-weight="600">Nur mit Akku / Powerbank messen,</text>
+  <text x="30" y="418" font-size="12" fill="#c0392b" font-weight="600">nicht am Netzteil-Laptop.</text>
+</svg>
